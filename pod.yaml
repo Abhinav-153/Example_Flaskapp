@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hell
+  labels:
+    app: hell
+    tier: backend
+
+spec:
+  containers:
+    - name: hell
+      image: hell
