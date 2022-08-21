@@ -7,15 +7,15 @@ spec:
   selector:
     matchLabels:
       tier: backend
-      app: hell
+      app: demo-app
   template:
     metadata:
-      name: hell
+      name: demo-app
       labels:
-        app: hell
+        app: demo-app
         tier: backend
     spec:
       containers:
-        - name: hell
-          image: hell
+        - name: demo-app
+          image: demo-app
           imagePullPolicy: Never
