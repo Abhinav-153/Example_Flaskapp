@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
- name: hell-app
+ name: demo-app-deployment
 spec:
   replicas: 3
   selector:
@@ -16,6 +16,5 @@ spec:
         tier: backend
     spec:
       containers:
-        - name: demo-app
-          image: demo-app
-          imagePullPolicy: Never
+        - name: demo-app-pod
+          image: abhinav153/demo-app-repo:v2

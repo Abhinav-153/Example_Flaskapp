@@ -9,4 +9,4 @@ metadata:
 spec:
   containers:
     - name: demo-app
-      image: demo-app
+      image: abhinav-153/demo-app-repo:v2
